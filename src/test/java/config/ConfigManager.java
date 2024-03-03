@@ -36,7 +36,8 @@ public class ConfigManager { // on the lessons: BaseTest.java
             //      chromeOptions.addArguments("--headless");
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(chromeOptions);
-        } else if (browser.equalsIgnoreCase("firefox")) {
+        }
+        else if (browser.equalsIgnoreCase("firefox")) {
             FirefoxOptions firefoxOptions = new FirefoxOptions();
             firefoxOptions.addPreference("intl.accept_languages", "en");
             //    firefoxOptions.addArguments("-headless");
