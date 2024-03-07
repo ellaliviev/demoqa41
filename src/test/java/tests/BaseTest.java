@@ -4,16 +4,19 @@ package tests;
 import config.ConfigManager;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import pages.MainPage;
 
-public class BaseTest {
+public class BaseTest extends  ConfigManager{
 
-    @BeforeSuite
-    public void init(){
-        ConfigManager.getDriver();
-    }
-
-    @AfterSuite
-    public void stop(){
-        ConfigManager.tearDown();
-    }
+    MainPage mainPage = new MainPage();
+//
+//    @BeforeSuite
+//    public void init(){
+//        ConfigManager.getDriver();
+//    }
+//
+//    @AfterSuite
+//    public void stop(){
+//        ConfigManager.tearDown();
+//    }
 }
